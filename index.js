@@ -25,7 +25,7 @@ client.on('ready',async () => {
 	Cron.schedule('* 0 * * *', async () => {
 		let x = await Embeds.getDelta();
 		if (x === 0) {
-			const channel = client.channels.cache.find(channel => channel.name === "r");
+			const channel = client.channels.cache.find(channel => channel.name === "pd-22");
 			const y = await Embeds.alertEmbed();
 			channel.send({content: '<@&888443669282193438>', embeds: [y]});
 		}
@@ -37,7 +37,7 @@ client.on('ready',async () => {
 });
 
 async function getMessages() {
-	return await client.guilds.fetch('595102402168750081').then(guild => guild.channels.cache.get('905194097214648360').messages.fetch('970902395783618620'));
+	return await client.guilds.fetch('752706394859372614').then(guild => guild.channels.cache.get('752710366429053028').messages.fetch('971177433527124009'));
 }
 
 
